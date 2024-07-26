@@ -1,0 +1,10 @@
+<header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+        <li *ngIf="isActive" class="nav-item"><a href="#" class="nav-link active" aria-current="page">{{home}}</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Customer</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Item</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Rental</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Rental Detail</a></li>
+        <button (click)="isActive = !isActive">Change State</button>
+    </ul>
+</header>
